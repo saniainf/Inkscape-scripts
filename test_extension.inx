@@ -1,0 +1,16 @@
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Test Extension</name>
+    <id>test.extension</id>
+    <param name="desc" type="description">
+        Минимальный тест: выводит список элементов документа в окно сообщений.
+    </param>
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Очистка"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">test_extension.py</command>
+    </script>
+</inkscape-extension>

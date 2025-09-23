@@ -1,0 +1,16 @@
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Remove No Color Objects</name>
+    <id>remove.no.color.objects</id>
+    <param name="desc" type="description">
+        Удаляет все объекты без заливки и обводки, учитывая наследование стиля от родителя. Логирует удалённые элементы.
+    </param>
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Очистка"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">remove_no_color.py</command>
+    </script>
+</inkscape-extension>
