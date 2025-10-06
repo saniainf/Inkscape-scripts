@@ -1,0 +1,16 @@
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Ungroup Text (Apply Transform)</name>
+    <id>ungroup.apply.coords</id>
+    <param name="desc" type="description">Разгруппировывает группы с трансформацией, содержащие один элемент &lt;text&gt;, применяя матрицу к координатам.</param>
+    <param name="only_single_text" type="bool" gui-text="Только группы с одним <text>">true</param>
+    <param name="apply_to_tspan" type="bool" gui-text="Применять к tspan x/y">true</param>
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Очистка"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">ungroup_apply_coords.py</command>
+    </script>
+</inkscape-extension>

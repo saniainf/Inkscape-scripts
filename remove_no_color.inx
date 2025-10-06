@@ -4,6 +4,11 @@
     <param name="desc" type="description">
         Удаляет все объекты без заливки и обводки, учитывая наследование стиля от родителя. Логирует удалённые элементы.
     </param>
+    <param name="remove_empty_groups" type="bool" gui-text="Удалять пустые группы после очистки">true</param>
+    <param name="opacity_zero_is_none" type="bool" gui-text="Opacity 0 => невидимо">false</param>
+    <param name="display_none_is_invisible" type="bool" gui-text="Удалять display:none">false</param>
+    <param name="remove_desc" type="bool" gui-text="Удалять теги <desc>">false</param>
+    <param name="remove_title" type="bool" gui-text="Удалять теги <title>">false</param>
     <effect>
         <object-type>all</object-type>
         <effects-menu>
